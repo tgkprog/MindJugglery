@@ -25,6 +25,9 @@
 		<docker.image.prefix>microservice</docker.image.prefix>
 		<dockerfile.maven.version>1.4.2</dockerfile.maven.version>
 		<spring-cloud.version>Finchley.RC2</spring-cloud.version>
+		<sonar.projectKey>tgkprog_MindJugglery</sonar.projectKey>
+		<sonar.organization>tgkprog-1</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
