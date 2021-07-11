@@ -36,11 +36,13 @@ public class WordService {
             , "relegate", "detach", "protract", "indenture", "academia", "disgorge",
                     "libation", "expertly", "dwindle", "pessimist");
             String wrd = wordsLst.get(rnd.nextInt(wordsLst.size()));
-            while(words.contains(wrd)){
+            word.setWord(wrd);
+            while(words.contains(word)){
+
                 wrd = wordsLst.get(rnd.nextInt(wordsLst.size()));
+                word.setWord(wrd);
             }
             words.add(word);
-            word.setWord(wrd);
 
             final Character[ ] chrs2 = new Character[wrd.length()];
             for(int i = 0; i < wrd.length(); i++){
