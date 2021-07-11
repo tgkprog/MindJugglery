@@ -2,7 +2,8 @@ name: Build
 on:
   push:
     branches:
-      - master
+      - production
+      - qa
       - main
   pull_request:
     types: [opened, synchronize, reopened]
